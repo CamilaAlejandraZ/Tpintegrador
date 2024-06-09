@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     font-family: "Agency FB", Arial, sans-serif;
     line-height: 1;
     margin: 0;
@@ -12,7 +13,13 @@ body {
 }
                 
 .letra {
-    color: #213d49;
+    color: #213d49;   
+    font-size: 30px; 
+    
+}
+
+.espacios li {
+    margin-right: 60px;
 }
 
 /* Estilos para el encabezado */
@@ -30,6 +37,7 @@ header {
     left: 0;
     z-index: 1000;
     right: 0;
+    
 }
 .izquierda{
     display: flex;
@@ -44,6 +52,21 @@ header {
 header h1 {
     text-align: center;
     margin: 0;
+    
+}
+.botonquote button{
+    width: 200px;
+    height: 40px;
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+    background: #1e50c1;
+    color: #fff;
+    border: 15px ;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 15px; 
+    border-radius: 5px;
+    font-weight: bold;
+   
     
 }
 
@@ -61,6 +84,32 @@ nav ul li {
 nav ul li a {
     color: #414040;
     text-decoration: none;
+}
+.menu > li:hover > a {
+    color: #1e50c1;
+}
+
+.menu > li:hover > a::before {
+    visibility: visible;
+    scale: 1 1;
+}
+
+.menu > li a {
+    color: #414040;
+    position: relative;  
+}
+
+.menu > li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+    background: #1e50c1;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
 }
 
 #home {
@@ -81,6 +130,7 @@ nav ul li a {
     flex:1;
     width: 50%;
     text-align: center;
+   
     
 }
 
@@ -110,77 +160,145 @@ nav ul li a {
     white-space: pre-line;
     font-family: "Gadugi",Arial, Helvetica, sans-serif;
 }
-
-/* Estilos para la sección Sobre Mí */
-#about {
-    padding: 20px 0;
-}
-
-#about h2 {
-    text-align: center;
-}
-
-#about p {
-    text-align: center;
-}
-
-/* Estilos para la sección de Proyectos */
-
-.containerP{
-    display: flex;
-    justify-content: space-between;
-    width: 1500px;
-    height: 400px;
-}
-
-#projects {
-    background: #f4f4f4;
-    padding: 20px 0;
-}
-
-#projects h3 {
-    padding: 15px;
-    text-align: center;
-}
-
-#projects p{
-    padding: 30px;
-    text-align: center;
-}
-
-.boton{
-    flex: 1;
-    align-items: center;
-    margin-top: 200px;
-    padding-left: 50px;
-}
-
-.boton button{
-    width: 170px;
-    height: 50px;
+.botonproyecto button{
+    width: 350px;
+    height: 70px;
     font-family: "Gadugi", Arial, Helvetica, sans-serif;
     background: #1e50c1;
     color: #fff;
     border: 15px ;
     cursor: pointer;
-    padding: 5px 20px;
-    font-size: 10px; 
+    padding: 10px 10px;
+    font-size: 20px; 
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 80px;
+    
 }
 
-.project {
-    flex: 1;
-    background: #fff;  
-    margin-top: 100px;
-    margin: 70px;
-    padding: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+/* Estilos para la sección Sobre Mí */
+
+
+
+#about {
+    padding: 200px 0;
+    display: flex;
+
 }
 
-.project h3 {
+#about .container {
+    flex:0 0 70%;
+    
+    align-self: flex-start;
+   
+}
+
+#about .imagen{
+    flex:0 0 30%;
+    text-align: center;
+}
+
+/* Estilos para la sección de Proyectos */
+
+.services-section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 150px 0;
+    text-align: left;
+    
+}
+
+.services-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.services-section h2 span {
+    color: #1e50c1;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 75%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
     margin-top: 0;
+    font-size: 24px;
+    color: #333;
 }
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card button {
+    background-color: #1e50c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #163a8e;
+}
+
+.cta-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button {
+    background-color: #1e50c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20%;
+}
+
+.cta-button:hover {
+    background-color: #163a8e;
+}
+
+
+/* estilos para testimonios */
+
+
 
 /* estilos para el footer */
 #contact {
