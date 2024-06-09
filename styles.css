@@ -1,0 +1,240 @@
+body {
+    font-family: "Agency FB", Arial, sans-serif;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+                
+.letra {
+    color: #213d49;
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #fff;
+    color: #373434;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    right: 0;
+}
+.izquierda{
+    display: flex;
+    align-items: center;
+    
+}
+.izquierda h3{
+    margin-left: 30px;
+} 
+
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #414040;
+    text-decoration: none;
+}
+
+#home {
+    padding: 150px 0;
+    display: flex;
+
+}
+
+#home .container {
+    flex:1;
+    width: 50%;
+    left: 70px;
+    position: relative;
+   
+}
+
+#home .imagen{
+    flex:1;
+    width: 50%;
+    text-align: center;
+    
+}
+
+
+#home .container h3 {
+    font-size: 50px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #213d49;
+    
+}
+#home h1{
+    color: #1e50c1;
+    font-size:100px ;
+    margin: 5px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+#home p{
+    font-size: 15px;
+    padding: 5px;
+    white-space: pre-line;
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para la sección Sobre Mí */
+#about {
+    padding: 20px 0;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+}
+
+/* Estilos para la sección de Proyectos */
+
+.containerP{
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    height: 400px;
+}
+
+#projects {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+#projects h3 {
+    padding: 15px;
+    text-align: center;
+}
+
+#projects p{
+    padding: 30px;
+    text-align: center;
+}
+
+.boton{
+    flex: 1;
+    align-items: center;
+    margin-top: 200px;
+    padding-left: 50px;
+}
+
+.boton button{
+    width: 170px;
+    height: 50px;
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+    background: #1e50c1;
+    color: #fff;
+    border: 15px ;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 10px; 
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project {
+    flex: 1;
+    background: #fff;  
+    margin-top: 100px;
+    margin: 70px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* estilos para el footer */
+#contact {
+    padding: 20px 0;
+}
+
+#contact h2 {
+    font-size: 16px;
+    margin-right: 215px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.icon i{
+    margin: 5px;
+}
+
+footer button {
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #1e50c1;
+    border: 15px ;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 14px; 
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input{
+    background: #1e50c1;
+    color: #fff;
+    padding: 7px;
+    font-size: 12px;
+    border-radius: 5px;
+    border-color: white;
+    width: 200px;
+}
+
+footer {
+    background: #1e50c1;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer h2{
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 5px;
+    margin: 0;
+}
+
