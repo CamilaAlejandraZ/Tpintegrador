@@ -12,15 +12,6 @@ body {
     margin: 0 auto;
 }
                 
-.letra {
-    color: #213d49;   
-    font-size: 30px; 
-    
-}
-
-.espacios li {
-    margin-right: 60px;
-}
 
 /* Estilos para el encabezado */
 header {
@@ -56,7 +47,7 @@ header h1 {
 }
 .botonquote button{
     width: 200px;
-    height: 40px;
+    height: 60px;
     font-family: "Gadugi", Arial, Helvetica, sans-serif;
     background: #1e50c1;
     color: #fff;
@@ -65,9 +56,10 @@ header h1 {
     padding: 10px 10px;
     font-size: 15px; 
     border-radius: 5px;
-    font-weight: bold;
-   
-    
+    font-weight: bold;   
+}
+.botonquote button:hover {
+    background-color: #163a8e;
 }
 
 nav ul {
@@ -111,7 +103,7 @@ nav ul li a {
     scale: 0 0;
     visibility: hidden;
 }
-
+/* seccion home */
 #home {
     padding: 150px 0;
     display: flex;
@@ -131,12 +123,11 @@ nav ul li a {
     width: 50%;
     text-align: center;
    
-    
 }
 
 
 #home .container h3 {
-    font-size: 50px;
+    font-size: 70px;
     margin: 5px;
     margin-bottom: 10px;
     border: 0px;
@@ -148,31 +139,50 @@ nav ul li a {
 }
 #home h1{
     color: #1e50c1;
-    font-size:100px ;
+    font-size:120px ;
     margin: 5px;
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
 }
 #home p{
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px;
     white-space: pre-line;
+    color: #213d49;
     font-family: "Gadugi",Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
 }
-.botonproyecto button{
-    width: 350px;
-    height: 70px;
+.botonproyecto{
+    margin-top: 80px;
+    
+}
+#home .botonproyecto button{
+    width: 250px;
+    height: 50px;
     font-family: "Gadugi", Arial, Helvetica, sans-serif;
     background: #1e50c1;
     color: #fff;
     border: 15px ;
     cursor: pointer;
-    padding: 10px 10px;
-    font-size: 20px; 
+    padding: 10px ;
+    font-size: 15px; 
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 80px;
+    
+}
+#home .botonproyecto button:hover {
+    background-color: #163a8e;
+}
+.letra {
+    color: #213d49;   
+    font-size: 30px; 
+    margin-top: -85px;
+}
+.espacios li {
+    margin-right: 60px;
     
 }
 
@@ -181,16 +191,39 @@ nav ul li a {
 
 
 #about {
-    padding: 200px 0;
+    padding: 130px 0;
     display: flex;
 
 }
+#about .container h2{
+    font-size: 40px;
+} 
+
 
 #about .container {
     flex:0 0 70%;
-    
+    color: #213d49;
     align-self: flex-start;
-   
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    white-space: pre-line;  
+}
+.container button{
+    background-color: #1e50c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: -40px;
+    width: 180px;
+    font-weight: bold;
+    
+}
+.container button:hover {
+    background-color: #163a8e;
 }
 
 #about .imagen{
@@ -199,6 +232,11 @@ nav ul li a {
 }
 /* Estilos para la seccion Skills */
 
+.skill h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Gadugi", Arial, Helvetica, sans-serif;
+}
 .myskill{
     font-family: 'agency fb' ;
     list-style: none;
@@ -208,9 +246,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.skill h1{
-    text-align: center;
-}
+
 
 .skill{
     width: 500px;
@@ -230,7 +266,7 @@ nav ul li a {
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); ;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 }
@@ -297,28 +333,37 @@ nav ul li a {
 .services-section {
     width: 80%;
     margin: 30px auto;
-    padding: 150px 0;
+    padding: 80px 0;
     text-align: left;
     
 }
 
 .services-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 40px;
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #213d49;
+    margin-bottom: 10px;
+    
 }
 
-.services-section h2 span {
+.services-section h1 span {
     color: #1e50c1;
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
+    margin-top: -5px;
+    font-size: 35px;
+    
+
 }
 
 .content-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 50px;
 }
 
 .card-container {
+    font-family: "Gadugi",Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -343,27 +388,28 @@ nav ul li a {
 .card h3 {
     margin-top: 0;
     font-size: 24px;
-    color: #333;
+    color: #213d49;
 }
 
 .card p {
     font-size: 16px;
-    color: #666;
+    color: #213d49;
 }
 
 .card button {
-    background-color: #1e50c1;
-    color: #fff;
+    background-color:#fff ;
+    color: #1e50c1;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
 .card button:hover {
-    background-color: #163a8e;
+    background-color: rgba(30, 80, 193, 0.4);
 }
 
 .cta-container {
@@ -383,6 +429,7 @@ nav ul li a {
     font-size: 16px;
     transition: background-color 0.3s;
     margin-top: 20%;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -390,7 +437,7 @@ nav ul li a {
 }
 
 
-/* estilos para testimonios */
+
 
 
 
