@@ -1,0 +1,69 @@
+/* Para tamaños de pantalla hasta 320px */
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .izquierda h3 {
+        margin-left: 10px;
+    }
+
+    .botonquote button {
+        width: 150px;
+        height: 40px;
+        padding: 5px;
+        font-size: 12px;
+     }
+    header .menu{
+        font-size: 15px;
+    }
+    #home .imagen{
+        margin-left: 200px;
+    }
+    #home .container h3{
+        font-size: 35px;
+    }
+    #home h1{
+        font-size: 60px;
+    }
+    #home p{
+        font-size: 12px;
+    }
+    .botonproyecto{
+    margin-top: 40px;
+    
+    }
+    .letra {
+        margin-top: -150px;
+        font-size: 12px;
+        justify-content: center;
+        margin-left: 10px;
+       
+    }
+    .skill h1{
+        font-size: 20px;
+    }
+    .skill{
+        width: 250px;
+        margin: 30px auto;
+        padding: 15px;
+        margin-left: 50px;
+        
+    }
+    .services-section h2 {
+        margin-top: -80px;
+        font-size: 30px;   
+    }
+    .services-section h1 span {
+        font-size: 25px;
+    }
+    .content-container{
+        width: 50px;
+    }
+    
+}
