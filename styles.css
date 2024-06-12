@@ -1,3 +1,5 @@
+html{scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
     font-family: "Agency FB", Arial, sans-serif;
@@ -105,7 +107,7 @@ nav ul li a {
 }
 /* seccion home */
 #home {
-    padding: 150px 0;
+    padding: 170px 0;
     display: flex;
 
 }
@@ -237,23 +239,20 @@ nav ul li a {
     font-size: 40px;
     font-family: "Gadugi", Arial, Helvetica, sans-serif;
 }
-.myskill{
+#skills{
     font-family: 'agency fb' ;
     list-style: none;
-    padding: 0%;
+    padding: 60px;
     margin: 0;
     background: #fff;
     text-transform: uppercase;
 }
-
-
-
 .skill{
     width: 500px;
     margin: 60px auto;
     color: #213d49;
     padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba (0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .skill li{
     margin:20px 0;
@@ -418,7 +417,6 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
-
 .cta-button {
     background-color: #1e50c1;
     color: #fff;
@@ -428,7 +426,7 @@ nav ul li a {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-    margin-top: 20%;
+    margin-top: 35%;
     font-weight: bold;
 }
 
